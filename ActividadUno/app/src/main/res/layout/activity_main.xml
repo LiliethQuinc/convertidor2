@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/header_layout" />
+<!--    tools:context=".MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout" />
+-->
+
+
+
+    <EditText
+        android:id="@+id/origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Origen"
+        android:textSize="25sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="70dp"
+        />
+
+    <EditText
+        android:id="@+id/destino"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Destino"
+        android:textSize="25sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="170dp"/>
+
+    <RadioGroup
+        android:layout_height="250dp"
+        android:layout_width="500dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura"
+        />
+
+    <RadioButton
+        android:id="@+id/longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitud"
+        />
+
+    <RadioButton
+        android:id="@+id/volumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volumen"
+      />
+
+        <RadioButton
+            android:id="@+id/aceleracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="-290dp"
+            android:text="Aceleracion" />
+
+        <RadioButton
+            android:id="@+id/peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="5dp"
+            android:text="Peso" />
+
+        <RadioButton
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            />
+        </RadioGroup>
+
+    <Spinner
+        android:id="@+id/convertidor"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/convertir"
+        android:text="Convertir"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="50dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/limpiar"
+        android:text="Limpiar"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="250dp"
+        />
+
+</RelativeLayout>
